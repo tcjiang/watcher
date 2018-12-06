@@ -2,19 +2,19 @@ package ca.tjweb.watcher.feature;
 
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.hardware.camera2.CameraManager;
 import android.content.Context;
+import android.hardware.Camera;
 import android.util.Log;
 
 import java.io.IOException;
 
 public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {
     private SurfaceHolder mHolder;
-    private CameraManager mCamera;
+    private Camera mCamera;
 
     private static final String TAG = CameraPreview.class.getName();
 
-    public CameraPreview(Context context, CameraManager camera) {
+    public CameraPreview(Context context, Camera camera) {
         super(context);
         mCamera = camera;
 
