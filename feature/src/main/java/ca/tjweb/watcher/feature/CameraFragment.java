@@ -29,7 +29,7 @@ public class CameraFragment extends Fragment
         implements View.OnClickListener, ActivityCompat.OnRequestPermissionsResultCallback {
     private AutoFitTextureView mTextureView;
     private Semaphore mCameraOpenCloseLock = new Semaphore(1);
-    private static final int REQUEST_CAMERA_PERMISSION = 1;
+    public static final int REQUEST_CAMERA_PERMISSION = 1;
 
     /**
      * A reference to the opened {@link CameraDevice}.
@@ -120,6 +120,13 @@ public class CameraFragment extends Fragment
         }
     }
 
+    private void setUpCameraOutputs(int width, int height) {
+        //TODO
+    }
+
+    private void configureTransform(int viewWidth, int viewHeight) {
+        //Todo
+    }
     private void openCamera(int width, int height) {
         if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA)
                 != PackageManager.PERMISSION_GRANTED) {
