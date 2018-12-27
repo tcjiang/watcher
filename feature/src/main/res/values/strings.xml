@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="picture">Picture</string>
+    <string name="video">Record</string>
     <string name="description_info">Info</string>
     <string name="request_permission">This App needs camera permission</string>
 </resources>
